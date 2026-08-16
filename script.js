@@ -109,17 +109,10 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
-  /* ---------- Ano dinâmico ---------- */
-  function setCurrentYear() {
-    const el = document.getElementById("currentYear");
-    if (el) el.textContent = new Date().getFullYear();
-  }
-
   /* ---------- Init ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     renderServices();
     setupMenu();
     setupHeaderScroll();
-    setCurrentYear();
   });
 })();
